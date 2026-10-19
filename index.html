@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>담없는교회 | 대한예수교장로회(고신)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 상단 네비게이션 -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-mark" aria-label="대한예수교장로회 고신 로고">
+          <img src="kosin-logo.svg" alt="대한예수교장로회(고신) 로고" class="kosin-logo-img" />
+        </span>
+        <div class="logo-text">
+          <span class="logo-denomination">대한예수교장로회(고신)</span>
+          <span class="logo-ko">담없는교회</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">교회소개</a>
+        <a href="#kosin">고신교단소개</a>
+        <a href="#sermons">설교말씀</a>
+        <a href="#worship">예배·모임안내</a>
+        <a href="#newcomer">새가족안내</a>
+        <a href="#location">오시는길</a>
+        <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" class="btn-nav btn-youtube-nav">▶ 유튜브 설교채널</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-badge">대한예수교장로회(고신) · 바른 말씀과 열린 교제의 공동체</p>
+      <h1 class="hero-title">
+        막힌 담을 허물고 사랑으로 하나 되는 곳,<br />
+        <span>담없는교회</span>에 오신 것을 환영합니다
+      </h1>
+      <p class="hero-verse">
+        "그는 우리의 화평이신지라 둘로 하나를 만드사<br class="hide-mobile" />
+        원수 된 것 곧 중간에 막힌 담을 자기 육체로 허시고" <strong>(에베소서 2:14)</strong>
+      </p>
+      <div class="hero-buttons">
+        <a href="#sermons" class="btn btn-primary">이번 주 설교 말씀 보기</a>
+        <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" class="btn btn-outline">유튜브 채널 바로가기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 빠른 정보 바 -->
+  <section class="quick-info">
+    <div class="container quick-info-grid">
+      <div class="quick-item">
+        <span class="quick-icon">🕊️</span>
+        <div>
+          <strong>주일 예배</strong>
+          <p>매주 주일 오전 11:00</p>
+        </div>
+      </div>
+      <div class="quick-item">
+        <span class="quick-icon">📖</span>
+        <div>
+          <strong>책별 성경공부</strong>
+          <p>매주 주일 오후 01:00</p>
+        </div>
+      </div>
+      <a href="#sermons" class="quick-item quick-item-link">
+        <span class="quick-icon">📺</span>
+        <div>
+          <strong>이번 주 설교 말씀 (유튜브)</strong>
+          <p id="quickSermonTitle">새 포도주의 맛 (누가복음 6:1-49)</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 교회소개 & 담임목사 인사말 -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">ABOUT US</span>
+        <h2 class="section-title">담없는교회를 소개합니다</h2>
+        <p class="section-desc">정통 개혁주의 신앙 위에 서서, 누구에게나 따뜻하게 열려 있는 말씀 공동체입니다.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="visual-card">
+            <div class="visual-quote">
+              "세상과 교회 사이의 담을 허물고,<br />
+              바른 말씀 안에서 참된 믿음과 삶을 배우는 공동체"
+            </div>
+            <div class="visual-stats">
+              <div>
+                <strong>예장 고신</strong>
+                <span>소속 교단</span>
+              </div>
+              <div>
+                <strong>주일 11시</strong>
+                <span>주일 예배</span>
+              </div>
+              <div>
+                <strong>오후 1시</strong>
+                <span>책별 성경공부</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h3>환영합니다, 축복합니다</h3>
+          <p>
+            할렐루야! 담없는교회 홈페이지를 찾아주신 여러분을 주님의 이름으로 진심으로 환영하고 축복합니다.
+          </p>
+          <p>
+            우리 <strong>담없는교회</strong>는 한국교회의 순교적 신앙과 정통 개혁주의 신학을 계승하는 <strong>대한예수교장로회(고신)</strong> 소속 교회입니다. 사람과 사람 사이의 벽, 또 세상과 교회 사이의 높은 문턱을 허물고 예수 그리스도의 사랑 안에서 한 가족이 되어가는 공동체를 지향합니다.
+          </p>
+          <p>
+            매주 드려지는 진실한 주일 예배와 성경 각 권을 깊이 있게 알아가는 <strong>책별 성경공부</strong>를 통해, 하나님의 뜻을 바르게 깨닫고 삶 속에서 말씀의 능력을 경험하고 있습니다. 처음 교회에 발걸음하시는 분들도 부담 없이 오셔서 함께 은혜를 나누시길 소망합니다.
+          </p>
+          <div class="pastor-sign">
+            <span>대한예수교장로회(고신) 담없는교회 담임목사</span>
+            <strong>김 기 동 목사</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- 대한예수교장로회(고신) 교단 소개 및 배경 -->
+      <div class="kosin-section" id="kosin">
+        <div class="kosin-header">
+          <div class="kosin-badge-logo">
+            <img src="kosin-logo.svg" alt="대한예수교장로회(고신) 심볼" />
+          </div>
+          <div class="kosin-header-text">
+            <span class="kosin-label">DENOMINATION HERITAGE</span>
+            <h3>대한예수교장로회(고신) 교단 소개 및 역사적 배경</h3>
+            <p>담없는교회가 소속된 <strong>대한예수교장로회(고신, 高神)</strong>는 순교적 신앙의 전통과 개혁주의 신학을 굳건히 지키는 대한민국의 대표적인 정통 장로교단입니다.</p>
+          </div>
+        </div>
+
+        <div class="kosin-cards">
+          <div class="kosin-card">
+            <h4>1. 순교 신앙에 뿌리를 둔 역사적 배경</h4>
+            <p>
+              일제강점기 신사참배 강요라는 극심한 박해 속에서도 끝까지 믿음의 정절을 지킨 한상동·주남선 목사님 등 출옥성도들을 중심으로 시작되었습니다. 해방 후 한국교회의 진정한 회개와 신앙 재건을 위해 1946년 <strong>고려신학교(現 고신대학교·고려신학대학원)</strong>를 설립하고, 1952년 총회를 조직하여 오늘에 이르고 있습니다.
+            </p>
+          </div>
+          <div class="kosin-card">
+            <h4>2. '신앙의 정통과 생활의 순결'</h4>
+            <p>
+              종교개혁자 칼빈의 개혁주의 신학 전통과 웨스트민스터 신앙고백서 및 대·소요리문답을 신앙의 표준으로 삼습니다. <strong>오직 성경(Sola Scriptura)</strong>을 신앙과 행위의 유일한 법칙으로 고백하며, 교리적 바름(신앙의 정통)과 하나님 앞에서의 거룩한 삶(생활의 순결, 코람데오 정신)이 일치하는 성숙한 그리스도인을 세워갑니다.
+            </p>
+          </div>
+          <div class="kosin-card">
+            <h4>3. 고신총회 심볼(로고)의 의미</h4>
+            <p>
+              로고의 아랫부분은 펼쳐진 <strong>성경</strong>을, 중심부는 성경 위에 굳게 세워진 <strong>십자가</strong>를 상징합니다. 이는 오직 하나님의 말씀과 예수 그리스도의 십자가 보혈 위에 서서, 순교적 신앙 유산을 계승하고 세상을 향해 복음의 날개를 펼쳐 비상하는 교회의 비전을 담고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 설교 말씀 & 유튜브 채널 연동 섹션 -->
+  <section class="section section-alt" id="sermons">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">SERMON & YOUTUBE CHANNEL</span>
+        <h2 class="section-title">설교 말씀 · 담없는교회 유튜브</h2>
+        <p class="section-desc">매주 선포되는 주일 예배 말씀과 성경 강해를 담없는교회 공식 유튜브 채널에서 다시 들으실 수 있습니다.</p>
+      </div>
+
+      <div class="sermon-showcase">
+        <!-- 대표 영상 영역 -->
+        <div class="featured-sermon" id="featuredSermon">
+          <a href="https://www.youtube.com/watch?v=uTuR4bCCqn0" target="_blank" rel="noopener noreferrer" class="featured-thumb-link" id="featuredThumbLink">
+            <img src="https://i.ytimg.com/vi/uTuR4bCCqn0/hqdefault.jpg" alt="최신 설교 썸네일" id="featuredThumbImg" />
+            <div class="play-overlay">
+              <span class="play-btn-circle">▶</span>
+              <span class="play-btn-label">유튜브에서 설교 영상 시청하기</span>
+            </div>
+          </a>
+          <div class="featured-info">
+            <div class="featured-badges">
+              <span class="badge-live">최신 설교 말씀</span>
+              <span class="badge-date" id="featuredDate">2026. 10. 18. 주일예배</span>
+            </div>
+            <h3 id="featuredTitle">누가복음(#6) 새 포도주의 맛 (누가복음 6장 1-49절)</h3>
+            <p class="featured-preacher">설교: 김기동 담임목사 | 대한예수교장로회(고신) 담없는교회</p>
+            <div class="featured-actions">
+              <a href="https://www.youtube.com/watch?v=uTuR4bCCqn0" target="_blank" rel="noopener noreferrer" class="btn btn-youtube" id="featuredWatchBtn">
+                ▶ 이 설교 유튜브에서 보기
+              </a>
+              <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-channel">
+                담없는교회 유튜브 채널 구독 · 전체보기
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 최근 설교 목록 -->
+        <div class="recent-sermons-panel">
+          <div class="recent-panel-header">
+            <h4>최근 업로드된 설교 말씀</h4>
+            <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA/videos" target="_blank" rel="noopener noreferrer">전체 영상 보기 →</a>
+          </div>
+
+          <div class="sermon-list" id="sermonList">
+            <div class="sermon-item active" data-video-id="uTuR4bCCqn0" data-title="누가복음(#6) 새 포도주의 맛 (누가복음 6장 1-49절)" data-date="2026. 10. 18. 주일예배">
+              <img src="https://i.ytimg.com/vi/uTuR4bCCqn0/mqdefault.jpg" alt="새 포도주의 맛" />
+              <div class="sermon-item-text">
+                <span class="sermon-item-date">2026. 10. 18 · 누가복음 6:1-49</span>
+                <h5>주일예배 누가복음(#6) 새 포도주의 맛</h5>
+                <a href="https://www.youtube.com/watch?v=uTuR4bCCqn0" target="_blank" rel="noopener noreferrer" class="sermon-direct-link">유튜브 바로가기 ↗</a>
+              </div>
+            </div>
+
+            <div class="sermon-item" data-video-id="zeFRw2m1cRw" data-title="누가복음(#5) 일어나 따랐습니다 (누가복음 5장 1-39절)" data-date="2026. 10. 11. 주일예배">
+              <img src="https://i.ytimg.com/vi/zeFRw2m1cRw/mqdefault.jpg" alt="일어나 따랐습니다" />
+              <div class="sermon-item-text">
+                <span class="sermon-item-date">2026. 10. 11 · 누가복음 5:1-39</span>
+                <h5>주일예배 누가복음(#5) 일어나 따랐습니다</h5>
+                <a href="https://www.youtube.com/watch?v=zeFRw2m1cRw" target="_blank" rel="noopener noreferrer" class="sermon-direct-link">유튜브 바로가기 ↗</a>
+              </div>
+            </div>
+
+            <div class="sermon-item" data-video-id="cskBqgY7OgA" data-title="누가복음(#4) 해방자 예수님 (누가복음 4장 1-44절)" data-date="2026. 10. 04. 주일예배">
+              <img src="https://i.ytimg.com/vi/cskBqgY7OgA/mqdefault.jpg" alt="해방자 예수님" />
+              <div class="sermon-item-text">
+                <span class="sermon-item-date">2026. 10. 04 · 누가복음 4:1-44</span>
+                <h5>주일예배 누가복음(#4) 해방자 예수님</h5>
+                <a href="https://www.youtube.com/watch?v=cskBqgY7OgA" target="_blank" rel="noopener noreferrer" class="sermon-direct-link">유튜브 바로가기 ↗</a>
+              </div>
+            </div>
+
+            <div class="sermon-item" data-video-id="zUpoV4bWYbw" data-title="누가복음 3장 예수님의 족보" data-date="2026. 09. 28. 말씀영상">
+              <img src="https://i.ytimg.com/vi/zUpoV4bWYbw/mqdefault.jpg" alt="누가복음 3장 예수님의 족보" />
+              <div class="sermon-item-text">
+                <span class="sermon-item-date">2026. 09. 28 · 누가복음 3장</span>
+                <h5>누가복음 3장 예수님의 족보</h5>
+                <a href="https://www.youtube.com/watch?v=zUpoV4bWYbw" target="_blank" rel="noopener noreferrer" class="sermon-direct-link">유튜브 바로가기 ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 핵심가치 (3대 비전) -->
+  <section class="section" id="vision">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">OUR VISION</span>
+        <h2 class="section-title">담없는교회가 추구하는 핵심가치</h2>
+        <p class="section-desc">예배와 말씀 공부, 그리고 열린 교제를 통해 건강한 신앙을 세워갑니다.</p>
+      </div>
+
+      <div class="vision-grid">
+        <div class="vision-card">
+          <div class="vision-num">01</div>
+          <h3>본질에 충실한 주일예배</h3>
+          <p>매주 주일 오전 11시, 하나님께 온전한 마음과 정성을 다해 드리는 예배를 통해 영적인 회복과 은혜를 누립니다.</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">02</div>
+          <h3>깊이 있는 책별 성경공부</h3>
+          <p>매주 주일 오후 1시, 성경을 한 권씩 체계적으로 함께 읽고 배우며 하나님의 말씀을 삶의 기준으로 삼습니다.</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">03</div>
+          <h3>담이 없는 열린 공동체</h3>
+          <p>누구든지 소외됨 없이 따뜻한 환대와 진솔한 나눔 속에서 서로를 격려하고 이웃에게 사랑을 전합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 예배 및 모임 안내 -->
+  <section class="section section-alt" id="worship">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">WORSHIP & BIBLE STUDY</span>
+        <h2 class="section-title">예배 및 성경공부 시간 안내</h2>
+        <p class="section-desc">예배 시작 10분 전에 오셔서 기도로 마음의 문을 여시기 바랍니다.</p>
+      </div>
+
+      <div class="worship-content active">
+        <div class="table-wrapper">
+          <table class="worship-table">
+            <thead>
+              <tr>
+                <th>모임 구분</th>
+                <th>시간</th>
+                <th>장소</th>
+                <th>안내</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>주일 예배</strong></td>
+                <td>매주 주일 오전 11:00</td>
+                <td>담없는교회 본당</td>
+                <td>온 성도가 함께 드리는 주일 대예배 (<a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" style="color: #1b65b9; font-weight: 600; text-decoration: underline;">유튜브 설교 영상 제공</a>)</td>
+              </tr>
+              <tr>
+                <td><strong>애찬 및 교제</strong></td>
+                <td>매주 주일 낮 12:00</td>
+                <td>교회 친교실</td>
+                <td>성도 간의 따뜻한 식사와 나눔</td>
+              </tr>
+              <tr>
+                <td><strong>책별 성경공부</strong></td>
+                <td>매주 주일 오후 01:00</td>
+                <td>담없는교회 본당</td>
+                <td>성경 각 권을 깊이 있게 배우는 말씀 시간</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 새가족 안내 & 등록 신청 -->
+  <section class="section" id="newcomer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">WELCOME NEWCOMERS</span>
+        <h2 class="section-title">처음 오시는 분들을 위한 안내</h2>
+        <p class="section-desc">담없는교회는 언제나 열린 마음으로 여러분을 기다리고 있습니다.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-badge">STEP 1</span>
+          <h4>편안한 방문</h4>
+          <p>주일 오전 11시 예배에 맞춰 부담 없이 교회를 방문해 주세요.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-badge">STEP 2</span>
+          <h4>담임목사님과의 인사</h4>
+          <p>예배 후 김기동 담임목사님 및 성도님들과 따뜻하게 인사를 나눕니다.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-badge">STEP 3</span>
+          <h4>점심 식사 및 교제</h4>
+          <p>정성껏 준비한 식사를 함께 나누며 편안한 교제의 시간을 갖습니다.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-badge">STEP 4</span>
+          <h4>책별 성경공부 참여</h4>
+          <p>오후 1시 책별 성경공부를 통해 말씀을 쉽고 깊이 있게 배워갑니다.</p>
+        </div>
+      </div>
+
+      <div class="register-box">
+        <div class="register-info">
+          <h3>온라인 방문 · 문의 신청</h3>
+          <p>방문 전에 미리 남겨주시면 예배 및 성경공부 안내를 친절히 도와드립니다.</p>
+        </div>
+        <form class="register-form" id="newcomerForm">
+          <div class="form-row">
+            <input type="text" id="nameInput" placeholder="이름" required />
+            <input type="tel" id="phoneInput" placeholder="연락처 (예: 010-1234-5678)" required />
+          </div>
+          <div class="form-row">
+            <select id="serviceSelect" required>
+              <option value="">참석 희망 모임 선택</option>
+              <option value="주일 예배 (오전 11:00)">주일 예배 (오전 11:00)</option>
+              <option value="책별 성경공부 (오후 1:00)">책별 성경공부 (오후 1:00)</option>
+              <option value="주일 예배 + 책별 성경공부">주일 예배 + 책별 성경공부 모두 참석</option>
+              <option value="신앙 상담 및 문의">신앙 상담 및 문의</option>
+            </select>
+            <button type="submit" class="btn btn-primary">방문 안내 신청하기</button>
+          </div>
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 오시는 길 -->
+  <section class="section section-alt" id="location">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">LOCATION & CONTACT</span>
+        <h2 class="section-title">오시는 길</h2>
+        <p class="section-desc">담없는교회로 오시는 길을 안내해 드립니다.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="map-box">
+          <div class="map-placeholder">
+            <div class="map-pin">📍 담없는교회</div>
+            <p>인천시 서구 푸른로8번길 12</p>
+            <span>네이버 지도 / 카카오맵에서 '인천시 서구 푸른로8번길 12'를 검색해 주세요.</span>
+            <div style="margin-top: 18px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+              <a href="https://map.naver.com/p/search/%EC%9D%B8%EC%B2%9C%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%ED%91%B8%EB%A5%B8%EB%A1%9C8%EB%B2%88%EA%B8%B8%2012" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 9px 18px; font-size: 13.5px;">네이버 지도 보기</a>
+              <a href="https://map.kakao.com/?q=%EC%9D%B8%EC%B2%9C%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%ED%91%B8%EB%A5%B8%EB%A1%9C8%EB%B2%88%EA%B8%B8%2012" target="_blank" rel="noopener noreferrer" class="btn btn-nav" style="padding: 9px 18px; font-size: 13.5px;">카카오맵 보기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <div class="detail-item">
+            <h4>교회 기본 정보</h4>
+            <p><strong>소속교단:</strong> 대한예수교장로회(고신)</p>
+            <p><strong>교회명:</strong> 담없는교회</p>
+            <p><strong>담임목사:</strong> 김기동 목사</p>
+            <p><strong>주소:</strong> 인천시 서구 푸른로8번길 12</p>
+          </div>
+          <div class="detail-item">
+            <h4>예배 및 성경공부 시간</h4>
+            <p><strong>주일 예배:</strong> 매주 주일 오전 11:00</p>
+            <p><strong>책별 성경공부:</strong> 매주 주일 오후 01:00</p>
+          </div>
+          <div class="detail-item">
+            <h4>온라인 설교 채널</h4>
+            <p><strong>공식 유튜브:</strong> <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" style="color: #c4302b; font-weight: 600; text-decoration: underline;">담없는교회 유튜브 채널 바로가기 ↗</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark logo-mark-footer">
+            <img src="kosin-logo.svg" alt="대한예수교장로회(고신) 로고" class="kosin-logo-img" />
+          </span>
+          <div class="logo-text">
+            <span class="logo-denomination">대한예수교장로회(고신)</span>
+            <span class="logo-ko">담없는교회</span>
+          </div>
+        </div>
+        <p>대한예수교장로회(고신) 담없는교회 | 담임목사: 김기동</p>
+        <p>주소: 인천시 서구 푸른로8번길 12 | 주일예배 오전 11:00 · 책별 성경공부 오후 1:00</p>
+      </div>
+      <div class="footer-copy">
+        <p style="margin-bottom: 8px;">
+          <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" style="color: #f6d365; font-weight: 600;">▶ 담없는교회 공식 유튜브 채널</a>
+        </p>
+        <p>&copy; 2026 담없는교회. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
