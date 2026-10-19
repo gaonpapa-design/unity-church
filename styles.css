@@ -552,69 +552,66 @@ a {
   color: var(--text-body);
 }
 
-/* 예배 안내 */
-.worship-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 28px;
+/* 예배 및 성경공부 안내 카드 */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.tab-btn {
-  padding: 11px 26px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--white);
-  color: var(--text-body);
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.tab-btn.active {
-  background: var(--primary);
-  color: var(--white);
-  border-color: var(--primary);
-}
-
-.worship-content {
-  display: none;
-}
-
-.worship-content.active {
-  display: block;
-}
-
-.table-wrapper {
+.schedule-card {
   background: var(--white);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  overflow-x: auto;
+  padding: 28px 24px;
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.worship-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
+.schedule-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
-.worship-table th,
-.worship-table td {
-  padding: 18px 24px;
-  border-bottom: 1px solid var(--border);
-  font-size: 15px;
-}
-
-.worship-table th {
-  background: var(--bg-alt);
-  color: var(--text-dark);
+.schedule-time {
+  background: #e8f0fb;
+  color: #1b4b8a;
+  font-size: 13.5px;
   font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
 }
 
-.worship-table tr:last-child td {
-  border-bottom: none;
+.schedule-place {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.schedule-card h3 {
+  font-size: 20px;
+  color: var(--text-dark);
+}
+
+.schedule-card p {
+  font-size: 14.5px;
+  color: var(--text-body);
+  line-height: 1.55;
+}
+
+.schedule-link {
+  margin-top: 4px;
+  display: inline-block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #c4302b;
+  text-decoration: underline;
 }
 
 /* 새가족 안내 */
@@ -1142,6 +1139,7 @@ a {
   .kosin-cards,
   .sermon-showcase,
   .vision-grid,
+  .schedule-grid,
   .steps-grid,
   .register-box,
   .news-grid,
@@ -1149,8 +1147,13 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .kosin-section {
-    padding: 28px 22px;
+  .section {
+    padding: 64px 0;
+  }
+
+  .kosin-section,
+  .register-box {
+    padding: 26px 20px;
   }
 
   .kosin-header {
@@ -1189,5 +1192,13 @@ a {
 @media (max-width: 600px) {
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .visual-card {
+    padding: 28px 20px;
+  }
+
+  .visual-stats strong {
+    font-size: 20px;
   }
 }
