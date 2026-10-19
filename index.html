@@ -371,23 +371,27 @@
 
       <div class="register-box">
         <div class="register-info">
+          <span class="kakao-badge">💬 카카오톡 1:1 실시간 문의</span>
           <h3>온라인 방문 · 문의 신청</h3>
-          <p>방문 전에 미리 남겨주시면 예배 및 성경공부 안내를 친절히 도와드립니다.</p>
+          <p>아래 내용을 입력하고 버튼을 누르시면, 신청 내용이 자동 복사되며 <strong>담없는교회 카카오톡 1:1 오픈채팅방</strong>으로 바로 연결됩니다.</p>
+          <a href="https://open.kakao.com/o/s29mydTi" target="_blank" rel="noopener noreferrer" class="kakao-direct-link">
+            입력 없이 바로 오픈채팅방 열기 ↗
+          </a>
         </div>
         <form class="register-form" id="newcomerForm">
           <div class="form-row">
-            <input type="text" id="nameInput" placeholder="이름" required />
-            <input type="tel" id="phoneInput" placeholder="연락처 (예: 010-1234-5678)" required />
+            <input type="text" id="nameInput" placeholder="이름 (또는 닉네임)" required />
+            <input type="tel" id="phoneInput" placeholder="연락처 (선택사항)" />
           </div>
           <div class="form-row">
             <select id="serviceSelect" required>
-              <option value="">참석 희망 모임 선택</option>
+              <option value="">참석 희망 모임 · 문의 선택</option>
               <option value="주일 예배 (오전 11:00)">주일 예배 (오전 11:00)</option>
               <option value="책별 성경공부 (오후 1:00)">책별 성경공부 (오후 1:00)</option>
               <option value="주일 예배 + 책별 성경공부">주일 예배 + 책별 성경공부 모두 참석</option>
-              <option value="신앙 상담 및 문의">신앙 상담 및 문의</option>
+              <option value="신앙 상담 및 교회 문의">신앙 상담 및 교회 문의</option>
             </select>
-            <button type="submit" class="btn btn-primary">방문 안내 신청하기</button>
+            <button type="submit" class="btn btn-kakao">💬 카카오톡으로 방문 신청하기</button>
           </div>
           <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
         </form>
@@ -431,8 +435,9 @@
             <p><strong>책별 성경공부:</strong> 매주 주일 오후 01:00</p>
           </div>
           <div class="detail-item">
-            <h4>온라인 설교 채널</h4>
+            <h4>온라인 설교 및 실시간 문의</h4>
             <p><strong>공식 유튜브:</strong> <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" style="color: #c4302b; font-weight: 600; text-decoration: underline;">담없는교회 유튜브 채널 바로가기 ↗</a></p>
+            <p style="margin-top: 6px;"><strong>카카오톡 문의:</strong> <a href="https://open.kakao.com/o/s29mydTi" target="_blank" rel="noopener noreferrer" style="color: #3c1e1e; background: #fee500; padding: 3px 10px; border-radius: 6px; font-weight: 700; display: inline-block;">💬 1:1 오픈채팅 바로가기 ↗</a></p>
           </div>
         </div>
       </div>
@@ -456,8 +461,9 @@
         <p>주소: 인천시 서구 푸른로8번길 12 | 주일예배 오전 11:00 · 책별 성경공부 오후 1:00</p>
       </div>
       <div class="footer-copy">
-        <p style="margin-bottom: 8px;">
-          <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" style="color: #f6d365; font-weight: 600;">▶ 담없는교회 공식 유튜브 채널</a>
+        <p style="margin-bottom: 8px; display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://www.youtube.com/channel/UCme7S3f0rveTP2k12YRatiA" target="_blank" rel="noopener noreferrer" style="color: #f6d365; font-weight: 600;">▶ 공식 유튜브 채널</a>
+          <a href="https://open.kakao.com/o/s29mydTi" target="_blank" rel="noopener noreferrer" style="color: #fee500; font-weight: 600;">💬 카카오톡 1:1 오픈채팅</a>
         </p>
         <p>&copy; 2026 담없는교회. All rights reserved.</p>
       </div>

@@ -117,16 +117,27 @@ document.addEventListener('DOMContentLoaded', () => {
       // 오프라인이거나 API 제한 시 HTML에 내장된 최신 설교 목록을 그대로 사용합니다.
     });
 
-  // 5. 온라인 새가족 사전 방문 신청 폼 처리
+  // 5. 온라인 새가족 사전 방문 신청 폼 처리 (카카오톡 1:1 오픈채팅 연동)
+  const KAKAO_OPEN_CHAT_URL = 'https://open.kakao.com/o/s29mydTi';
   const newcomerForm = document.getElementById('newcomerForm');
   const formFeedback = document.getElementById('formFeedback');
 
   newcomerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('nameInput').value.trim();
+    const phone = document.getElementById('phoneInput').value.trim();
     const service = document.getElementById('serviceSelect').value;
 
-    formFeedback.textContent = `✓ ${name}님, [${service}] 사전 방문 신청이 접수되었습니다. 교회에서 곧 안내드리겠습니다!`;
+    const phoneText = phone ? ` / 연락처: ${phone}` : '';
+    const messageToCopy = `안녕하세요! 담없는교회 홈페이지 보고 연락드립니다.\n- 이름: ${name}${phoneText}\n- 참석 희망/문의: ${service}`;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(messageToCopy).catch(() => {});
+    }
+
+    window.open(KAKAO_OPEN_CHAT_URL, '_blank', 'noopener,noreferrer');
+
+    formFeedback.textContent = `✓ ${name}님의 신청 내용이 자동 복사되었으며 카카오톡 1:1 오픈채팅방이 열렸습니다. 채팅창에 '붙여넣기'하여 전송해 주세요!`;
     newcomerForm.reset();
   });
 });

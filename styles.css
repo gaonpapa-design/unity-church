@@ -674,6 +674,37 @@ a {
 .register-info p {
   font-size: 14.5px;
   color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.kakao-badge {
+  display: inline-block;
+  background: #fee500;
+  color: #3c1e1e;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.kakao-direct-link {
+  display: inline-block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1b65b9;
+  text-decoration: underline;
+}
+
+.btn-kakao {
+  background: #fee500;
+  color: #3c1e1e;
+  font-weight: 700;
+}
+
+.btn-kakao:hover {
+  background: #f0d700;
+  transform: translateY(-1px);
 }
 
 .register-form {
